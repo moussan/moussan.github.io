@@ -65,3 +65,11 @@ button[type="submit"]:hover {
   font-family: "Courier New", Courier, monospace;
   white-space: pre;
 }
+
+#random-text {
+  color: #fff;
+  font-size: 2em;
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre-wrap;
+}
+
