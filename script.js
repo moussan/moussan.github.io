@@ -1,35 +1,16 @@
-const randomText = document.getElementById("random-text");
+const randomText = `
+C%V7&G8*#)b1F+5pX9}Z|D~^eJwYjHkR[NcxM>qKuL|f^]Os=I@U3y6a2{i<0oE4tS-`4
+m:bQzT_\"Wg${'$'}A)vx)fN';!,y?l` +
+  `;:%M+.p<o[&]#\"!@^*i>Rs_u(k)hGt{j\\}\`{=wY$}BCXFJLZnKa-VEOdqPU/|`;
 
-// Generate a random string of characters
-function generateRandomString(length) {
-  let result = "";
-  const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  const charactersLength = characters.length;
-  for (let i = 0; i < length; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+let matrixText = '';
+
+for (let i = 0; i < 250; i++) {
+  const randomIndex = Math.floor(Math.random() * randomText.length);
+  matrixText += randomText[randomIndex];
+  if ((i + 1) % 50 === 0) {
+    matrixText += '\n';
   }
-  return result;
 }
 
-// Animate the random text to look like an encryption cipher
-function animateRandomText() {
-  const randomString = generateRandomString(100);
-  let currentIndex = 0;
-
-  setInterval(() => {
-    let newText = "";
-
-    // Add a random character to the end of the current text
-    for (let i = 0; i < currentIndex + 1; i++) {
-      newText += generateRandomString(1);
-    }
-
-    // Add the rest of the random string
-    newText += randomString.substring(currentIndex + 1);
-
-    randomText.textContent = newText;
-    currentIndex = (currentIndex + 1) % randomString.length;
-  }, 50);
-}
-
-animateRandomText();
+document.getElementById('random-text').textContent = matrixText;
