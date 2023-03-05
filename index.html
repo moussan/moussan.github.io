@@ -1,25 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="container">
-      <h1>Login</h1>
-      <div class="matrix-animation-container">
-        <p id="random-text"></p>
-      </div>
-      <form>
-        <div class="form-input">
-          <input type="text" id="username" placeholder="Username">
-        </div>
-        <div class="form-input">
-          <input type="password" id="password" placeholder="Password">
-        </div>
-        <button type="submit">Login</button>
-      </form>
-    </div>
-    <script src="script.js"></script>
-  </body>
-</html>
+<div id="matrix-container">
+  <h2>Login</h2>
+  <p id="matrix-text"></p>
+  <form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
