@@ -5,7 +5,7 @@ m:bQzT_\"Wg${'$'}A)vx)fN';!,y?l` +
 
 let matrixText = '';
 
-for (let i = 0; i < 2500; i++) {
+for (let i = 0; i < 500; i++) {
   const randomIndex = Math.floor(Math.random() * randomText.length);
   matrixText += randomText[randomIndex];
   if ((i + 1) % 50 === 0) {
@@ -13,4 +13,4 @@ for (let i = 0; i < 2500; i++) {
   }
 }
 
-document.getElementById('random-text').textContent = matrixText;
+document.getElementById('matrix-text').textContent = matrixText;
