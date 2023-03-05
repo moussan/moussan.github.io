@@ -1,3 +1,4 @@
+// start of script.js file
 const randomText = `
 C%V7&G8*#)b1F+5pX9}Z|D~^eJwYjHkR[NcxM>qKuL|f^]Os=I@U3y6a2{i<0oE4tS-`4
 m:bQzT_\"Wg${'$'}A)vx)fN';!,y?l` +
@@ -14,3 +15,4 @@ for (let i = 0; i < 500; i++) {
 }
 
 document.getElementById('matrix-text').textContent = matrixText;
+// end of script.js file
